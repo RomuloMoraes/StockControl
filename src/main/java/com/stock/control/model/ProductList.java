@@ -34,7 +34,7 @@ public class ProductList {
     //Update
     public void updateProductPriceIntoList(int idProduct, double newProductPrice) {
         Predicate<Product> findProductId = product -> product.getProductId() == idProduct;
-        Function<Product, Double> updateProductPrice = product -> product.productPrice = (newProductPrice);
+        Function<Product, Double> updateProductPrice = product -> product.setProductPrice(newProductPrice);
         productList.stream()
                 .filter(findProductId)
                 .map(updateProductPrice)

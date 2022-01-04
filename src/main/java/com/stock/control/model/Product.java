@@ -36,8 +36,8 @@ public class Product {
         return productPrice;
     }
 
-    public void setProductPrice(double productPrice) {
-        this.productPrice = productPrice;
+    public Double setProductPrice(double productPrice) {
+        return this.productPrice = productPrice;
     }
 
     @Override
